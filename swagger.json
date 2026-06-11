@@ -398,7 +398,7 @@
                         },
                         "type": "array"
                     },
-                    "urn:clary:params:scim:schemas:extension:2.0:User": {
+                    "urn:meetsilicon:params:scim:schemas:extension:2.0:User": {
                         "$ref": "#/components/schemas/SiliconScimExtension"
                     }
                 },
@@ -486,7 +486,7 @@
             },
             "Pick_ScimUser.Exclude_keyofScimUser.id__": {
                 "properties": {
-                    "urn:clary:params:scim:schemas:extension:2.0:User": {
+                    "urn:meetsilicon:params:scim:schemas:extension:2.0:User": {
                         "$ref": "#/components/schemas/SiliconScimExtension"
                     },
                     "schemas": {
@@ -34596,7 +34596,7 @@
                                                     "schema": "urn:ietf:params:scim:schemas:core:2.0:User",
                                                     "schemaExtensions": [
                                                         {
-                                                            "schema": "urn:clary:params:scim:schemas:extension:2.0:User",
+                                                            "schema": "urn:meetsilicon:params:scim:schemas:extension:2.0:User",
                                                             "required": false
                                                         }
                                                     ],
@@ -34672,7 +34672,7 @@
                                             "schema": "urn:ietf:params:scim:schemas:core:2.0:User",
                                             "schemaExtensions": [
                                                 {
-                                                    "schema": "urn:clary:params:scim:schemas:extension:2.0:User",
+                                                    "schema": "urn:meetsilicon:params:scim:schemas:extension:2.0:User",
                                                     "required": false
                                                 }
                                             ],
