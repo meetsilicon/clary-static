@@ -42158,7 +42158,7 @@
                 },
                 "description": "Update a space in a project",
                 "summary": "Update space",
-                "tags": ["Roles & Permissions", "Spaces"],
+                "tags": ["Roles and Permissions", "Spaces"],
                 "security": [],
                 "parameters": [
                     {
@@ -42270,7 +42270,7 @@
                 },
                 "description": "Create a new space inside a project",
                 "summary": "Create space",
-                "tags": ["Roles & Permissions", "Spaces"],
+                "tags": ["Roles and Permissions", "Spaces"],
                 "security": [],
                 "parameters": [
                     {
@@ -42362,7 +42362,7 @@
                 },
                 "description": "Grant a user access to a space",
                 "summary": "Grant user access to space",
-                "tags": ["Roles & Permissions", "Spaces"],
+                "tags": ["Roles and Permissions", "Spaces"],
                 "security": [],
                 "parameters": [
                     {
@@ -42422,7 +42422,7 @@
                 },
                 "description": "Remove a user's access to a space",
                 "summary": "Revoke user access to space",
-                "tags": ["Roles & Permissions", "Spaces"],
+                "tags": ["Roles and Permissions", "Spaces"],
                 "security": [],
                 "parameters": [
                     {
@@ -42482,7 +42482,7 @@
                 },
                 "description": "Grant a group access to a space",
                 "summary": "Grant group access to space",
-                "tags": ["Roles & Permissions", "Spaces"],
+                "tags": ["Roles and Permissions", "Spaces"],
                 "security": [],
                 "parameters": [
                     {
@@ -42543,7 +42543,7 @@
                 },
                 "description": "Remove a group's access to a space",
                 "summary": "Revoke group access to space",
-                "tags": ["Roles & Permissions", "Spaces"],
+                "tags": ["Roles and Permissions", "Spaces"],
                 "security": [],
                 "parameters": [
                     {
@@ -45300,7 +45300,7 @@
                 },
                 "description": "Get access list for a project. This is a list of users that have been explictly granted access to the project.\nThere may be other users that have access to the project via their organization membership.",
                 "summary": "List project access",
-                "tags": ["Roles & Permissions", "Projects"],
+                "tags": ["Roles and Permissions", "Projects"],
                 "security": [],
                 "parameters": [
                     {
@@ -45339,7 +45339,7 @@
                 },
                 "description": "Grant a user access to a project",
                 "summary": "Grant project access to user",
-                "tags": ["Roles & Permissions", "Projects"],
+                "tags": ["Roles and Permissions", "Projects"],
                 "security": [],
                 "parameters": [
                     {
@@ -45388,9 +45388,9 @@
                         }
                     }
                 },
-                "description": "Get a project explicit member's access.\nThere may be users that have access to the project via their organization membership.",
-                "summary": "Get project member access\n\nNOTE:\nWe don't use the API on the frontend. Instead, we can call the API\nso that we make sure of the user's access to the project.",
-                "tags": ["Roles & Permissions", "Projects"],
+                "description": "Get a project explicit member's access.\nThere may be users that have access to the project via their organization membership.\n\nThis endpoint is not used by the Silicon frontend. Call it to confirm a user's access to a project.",
+                "summary": "Get project member access",
+                "tags": ["Roles and Permissions", "Projects"],
                 "security": [],
                 "parameters": [
                     {
@@ -45439,7 +45439,7 @@
                 },
                 "description": "Update a user's access to a project",
                 "summary": "Update project access for user",
-                "tags": ["Roles & Permissions", "Projects"],
+                "tags": ["Roles and Permissions", "Projects"],
                 "deprecated": true,
                 "security": [],
                 "parameters": [
@@ -45497,7 +45497,7 @@
                 },
                 "description": "Remove a user's access to a project",
                 "summary": "Revoke project access for user",
-                "tags": ["Roles & Permissions", "Projects"],
+                "tags": ["Roles and Permissions", "Projects"],
                 "deprecated": true,
                 "security": [],
                 "parameters": [
@@ -48287,7 +48287,7 @@
                 },
                 "description": "Updates the membership profile for a user in the current user's organization",
                 "summary": "Update organization member",
-                "tags": ["Roles & Permissions", "Organizations"],
+                "tags": ["Roles and Permissions", "Organizations"],
                 "deprecated": true,
                 "security": [],
                 "parameters": [
@@ -57291,7 +57291,7 @@
             "description": "Spaces allow you to organize charts and dashboards within a project. They also allow granular access to content by allowing you to create private spaces, which are only accessible to the creator and admins."
         },
         {
-            "name": "Roles & Permissions",
+            "name": "Roles and Permissions",
             "description": "These routes allow users to manage roles and permissions for their organization.",
             "externalDocs": {
                 "url": "https://docs.meetsilicon.com/references/roles"
