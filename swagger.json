@@ -35297,6 +35297,7 @@
         },
         "/api/v1/aiAgents/documents": {
             "get": {
+                "description": "List the documents uploaded for AI agents to use as context.",
                 "operationId": "listAiAgentDocuments",
                 "responses": {
                     "200": {
@@ -35333,6 +35334,7 @@
                 ]
             },
             "post": {
+                "description": "Upload a document that AI agents can use as context when answering questions.",
                 "operationId": "createAiAgentDocument",
                 "responses": {
                     "201": {
@@ -35372,6 +35374,7 @@
         },
         "/api/v1/aiAgents/documents/{documentUuid}": {
             "delete": {
+                "description": "Delete a document from the AI agent document library.",
                 "operationId": "deleteAiAgentDocument",
                 "responses": {
                     "200": {
@@ -35410,6 +35413,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents": {
             "get": {
+                "description": "List the AI agents in a project.",
                 "operationId": "listAgents",
                 "responses": {
                     "200": {
@@ -35446,6 +35450,7 @@
                 ]
             },
             "post": {
+                "description": "Create an AI agent in a project, with its instructions, data access and integrations.",
                 "operationId": "createAgent",
                 "responses": {
                     "201": {
@@ -35494,6 +35499,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/preferences": {
             "get": {
+                "description": "Get the current user's AI agent preferences for a project, such as their default agent.",
                 "operationId": "getUserAgentPreferences",
                 "responses": {
                     "200": {
@@ -35530,6 +35536,7 @@
                 ]
             },
             "post": {
+                "description": "Update the current user's AI agent preferences for a project.",
                 "operationId": "updateUserAgentPreferences",
                 "responses": {
                     "200": {
@@ -35576,6 +35583,7 @@
                 }
             },
             "delete": {
+                "description": "Reset the current user's AI agent preferences for a project.",
                 "operationId": "deleteUserAgentPreferences",
                 "responses": {
                     "200": {
@@ -35614,6 +35622,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/mcpServers": {
             "get": {
+                "description": "List the MCP servers connected to AI agents in a project.",
                 "operationId": "listMcpServers",
                 "responses": {
                     "200": {
@@ -35650,6 +35659,7 @@
                 ]
             },
             "post": {
+                "description": "Connect an MCP server so AI agents in a project can use its tools.",
                 "operationId": "createMcpServer",
                 "responses": {
                     "201": {
@@ -35698,6 +35708,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/mcpServers/{mcpServerUuid}/oauth/start": {
             "post": {
+                "description": "Start the OAuth sign-in flow for an MCP server that requires authentication.",
                 "operationId": "startMcpOAuthConnection",
                 "responses": {
                     "200": {
@@ -35744,6 +35755,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/mcpServers/{mcpServerUuid}/oauth/disconnect": {
             "post": {
+                "description": "Disconnect the OAuth connection for an MCP server.",
                 "operationId": "disconnectMcpOAuthConnection",
                 "responses": {
                     "200": {
@@ -35790,6 +35802,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}": {
             "get": {
+                "description": "Get an AI agent, including its instructions and settings.",
                 "operationId": "getAgent",
                 "responses": {
                     "200": {
@@ -35834,6 +35847,7 @@
                 ]
             },
             "patch": {
+                "description": "Update an AI agent's name, instructions, data access or integrations.",
                 "operationId": "updateAgent",
                 "responses": {
                     "200": {
@@ -35888,6 +35902,7 @@
                 }
             },
             "delete": {
+                "description": "Delete an AI agent from a project.",
                 "operationId": "deleteAgent",
                 "responses": {
                     "200": {
@@ -35934,6 +35949,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/mcpServers": {
             "get": {
+                "description": "List the MCP servers an AI agent can use.",
                 "operationId": "listAgentMcpServers",
                 "responses": {
                     "200": {
@@ -35980,6 +35996,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/models": {
             "get": {
+                "description": "List the language models available to an AI agent.",
                 "operationId": "getModelOptions",
                 "responses": {
                     "200": {
@@ -36026,6 +36043,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/suggestions": {
             "get": {
+                "description": "Get suggested questions to ask an AI agent, based on its data and instructions.",
                 "operationId": "getAgentSuggestions",
                 "responses": {
                     "200": {
@@ -36096,6 +36114,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/evaluateReadiness": {
             "post": {
+                "description": "Check whether an AI agent has the data access and metric context it needs to answer questions well.",
                 "operationId": "evaluateAgentReadiness",
                 "responses": {
                     "200": {
@@ -36142,6 +36161,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/verified-artifacts": {
             "get": {
+                "description": "List the charts and dashboards that have been verified for an AI agent.",
                 "operationId": "getVerifiedArtifacts",
                 "responses": {
                     "200": {
@@ -36206,6 +36226,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/verified-questions": {
             "get": {
+                "description": "List the questions with verified answers for an AI agent.",
                 "operationId": "getVerifiedQuestions",
                 "responses": {
                     "200": {
@@ -36252,6 +36273,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads": {
             "get": {
+                "description": "List conversation threads with an AI agent.",
                 "operationId": "listAgentThreads",
                 "responses": {
                     "200": {
@@ -36304,6 +36326,7 @@
                 ]
             },
             "post": {
+                "description": "Start a new conversation thread with an AI agent.",
                 "operationId": "createAgentThread",
                 "responses": {
                     "200": {
@@ -36360,6 +36383,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}": {
             "get": {
+                "description": "Get a conversation thread with an AI agent, including its messages.",
                 "operationId": "getAgentThread",
                 "responses": {
                     "200": {
@@ -36414,6 +36438,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/messages": {
             "post": {
+                "description": "Add a user message to a conversation thread with an AI agent.",
                 "operationId": "createAgentThreadMessage",
                 "responses": {
                     "200": {
@@ -36478,6 +36503,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/tool-calls/{toolCallId}/sql-approval": {
             "post": {
+                "description": "Approve or reject SQL that an AI agent proposed to run in a thread.",
                 "operationId": "decideAgentSqlApproval",
                 "responses": {
                     "200": {
@@ -36550,6 +36576,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/stream": {
             "post": {
+                "description": "Stream the AI agent's response to the latest message in a thread.",
                 "operationId": "streamAgentThreadResponse",
                 "responses": {
                     "200": {
@@ -36607,6 +36634,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/generate": {
             "post": {
+                "description": "Generate the AI agent's response to the latest message in a thread, without streaming.",
                 "operationId": "generateAgentThreadResponse",
                 "responses": {
                     "200": {
@@ -36661,6 +36689,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/generate-title": {
             "post": {
+                "description": "Generate a short title for a conversation thread from its messages.",
                 "operationId": "generateAgentThreadTitle",
                 "responses": {
                     "200": {
@@ -36715,6 +36744,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/clone/{promptUuid}": {
             "post": {
+                "description": "Copy a conversation thread up to a given prompt into a new thread.",
                 "operationId": "cloneAgentThread",
                 "responses": {
                     "200": {
@@ -36786,6 +36816,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/messages/{messageUuid}/savedQuery": {
             "patch": {
+                "description": "Link a message in an AI agent thread to a saved chart, or remove the link.",
                 "operationId": "updateAgentThreadMessageSavedQuery",
                 "responses": {
                     "200": {
@@ -36865,6 +36896,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/messages/{messageUuid}/feedback": {
             "patch": {
+                "description": "Record a user's feedback and rating on an AI agent response.",
                 "operationId": "updatePromptFeedback",
                 "responses": {
                     "200": {
@@ -36948,6 +36980,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/explore-access-summary": {
             "post": {
+                "description": "Summarize which explores and fields an AI agent can access, based on its tag settings.",
                 "operationId": "getAgentExploreAccessSummary",
                 "responses": {
                     "200": {
@@ -37006,6 +37039,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/artifacts/{artifactUuid}": {
             "get": {
+                "description": "Get a chart or dashboard that an AI agent created in a thread.",
                 "operationId": "getArtifact",
                 "responses": {
                     "200": {
@@ -37060,6 +37094,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/artifacts/{artifactUuid}/versions/{versionUuid}": {
             "get": {
+                "description": "Get a specific version of a chart or dashboard that an AI agent created.",
                 "operationId": "getArtifactVersion",
                 "responses": {
                     "200": {
@@ -37122,6 +37157,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/artifacts/{artifactUuid}/versions/{versionUuid}/viz-query": {
             "get": {
+                "description": "Run the query behind a chart that an AI agent created and return its results.",
                 "operationId": "getArtifactVizQuery",
                 "responses": {
                     "200": {
@@ -37184,6 +37220,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/artifacts/{artifactUuid}/versions/{versionUuid}/charts/{chartIndex}/viz-query": {
             "get": {
+                "description": "Run the query behind one chart in a dashboard that an AI agent created and return its results.",
                 "operationId": "getDashboardArtifactChartVizQuery",
                 "responses": {
                     "200": {
@@ -37255,6 +37292,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/artifacts/{artifactUuid}/versions/{versionUuid}/savedDashboard": {
             "patch": {
+                "description": "Link a version of an AI agent dashboard to a saved dashboard, or remove the link.",
                 "operationId": "updateArtifactVersionSavedDashboard",
                 "responses": {
                     "200": {
@@ -37334,6 +37372,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/artifacts/{artifactUuid}/versions/{versionUuid}/verified": {
             "patch": {
+                "description": "Mark a version of an AI agent chart or dashboard as verified, or remove the verification.",
                 "operationId": "setArtifactVersionVerified",
                 "responses": {
                     "200": {
@@ -37412,6 +37451,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/evaluations": {
             "post": {
+                "description": "Create an evaluation set of test prompts and expected answers for an AI agent.",
                 "operationId": "createEvaluation",
                 "responses": {
                     "201": {
@@ -37466,6 +37506,7 @@
                 }
             },
             "get": {
+                "description": "List the evaluation sets for an AI agent.",
                 "operationId": "getEvaluations",
                 "responses": {
                     "200": {
@@ -37512,6 +37553,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/evaluations/{evalUuid}/run": {
             "post": {
+                "description": "Run an evaluation set against an AI agent.",
                 "operationId": "runEvaluation",
                 "responses": {
                     "200": {
@@ -37566,6 +37608,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/evaluations/{evalUuid}": {
             "get": {
+                "description": "Get an evaluation set and its prompts.",
                 "operationId": "getEvaluation",
                 "responses": {
                     "200": {
@@ -37618,6 +37661,7 @@
                 ]
             },
             "patch": {
+                "description": "Update the name or prompts of an evaluation set.",
                 "operationId": "updateEvaluation",
                 "responses": {
                     "200": {
@@ -37680,6 +37724,7 @@
                 }
             },
             "delete": {
+                "description": "Delete an evaluation set.",
                 "operationId": "deleteEvaluation",
                 "responses": {
                     "200": {
@@ -37734,6 +37779,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/evaluations/{evalUuid}/runs": {
             "get": {
+                "description": "List the runs of an evaluation set.",
                 "operationId": "getEvaluationRuns",
                 "responses": {
                     "200": {
@@ -37806,6 +37852,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/evaluations/{evalUuid}/runs/{runUuid}": {
             "get": {
+                "description": "Get the results of one evaluation run, prompt by prompt.",
                 "operationId": "getEvaluationRunResults",
                 "responses": {
                     "200": {
@@ -37868,6 +37915,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/evaluations/{evalUuid}/append": {
             "post": {
+                "description": "Add prompts to an existing evaluation set.",
                 "operationId": "appendToEvaluation",
                 "responses": {
                     "200": {
@@ -37932,6 +37980,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/append-instruction": {
             "post": {
+                "description": "Add an instruction to an AI agent, for example after correcting one of its answers.",
                 "operationId": "appendInstruction",
                 "responses": {
                     "200": {
@@ -37988,6 +38037,7 @@
         },
         "/api/v1/projects/{projectUuid}/aiAgents/{agentUuid}/threads/{threadUuid}/messages/{promptUuid}/revert-change": {
             "post": {
+                "description": "Undo a change that an AI agent made in a thread.",
                 "operationId": "revertChange",
                 "responses": {
                     "200": {
@@ -46171,6 +46221,7 @@
         },
         "/api/v1/projects/{projectUuid}/colorPalette": {
             "get": {
+                "description": "Get the color palette that charts in a project use.",
                 "operationId": "getProjectColorPalette",
                 "responses": {
                     "200": {
